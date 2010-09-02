@@ -1,0 +1,299 @@
+body {
+		background:url('../images/background.JPG') repeat;
+		margin: 0; 
+		font-family: "Myriad Pro", "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
+	
+	p {
+		text-align: justify;
+	}
+	
+	a, a:visited {
+		color: #444444;
+	}
+	
+	a:hover {
+		color: #000000;
+	}
+	
+	.opac 
+	{
+		-moz-opacity: 0.70;
+		opacity:0.7;
+	}
+
+	#container 
+	{
+		background: #FFFFFF;
+		-moz-opacity: 0.80;
+   	opacity:0.8;
+		min-height:550px;
+	}
+	
+	#header
+	{
+		background-image:url('../images/zeroLogo.JPG');
+		background-repeat:no-repeat;
+		background-position:top 75%;
+		background-color: #8e1735;
+		border-bottom: 4px solid black;
+		height: 110px;
+		-moz-opacity: 0.95;
+		opacity:0.95;
+	}
+	
+	.nondefault
+	{
+		position:absolute;
+		left: -2000px;
+	}
+	
+	.content
+	{
+		padding: 0 60px 20px 60px;
+	}
+	
+	.footer
+	{
+		text-align:center;
+		color:black;
+		line-height:16px;
+		font-size:12px;
+		background-color:#FFFFFF;
+		-moz-opacity: 0.60;
+		opacity:0.6;
+	}
+			
+	.bevelmenu
+	{
+		font: bold 13px;
+		padding: 6px 0;
+		margin: 0;
+		width: 100%;
+		background-color: #FFF2BF;
+		text-align: center; 
+	}
+	
+	.bevelmenu li
+	{
+		list-style: none;
+		display: inline;
+	}
+	
+	.bevelmenu li a
+	{
+		padding: 3px 0.5em;
+		text-decoration: none;
+		color: black;
+		background-color: #FFF2BF;
+		border: 2px solid #FFF2BF;
+	}
+	
+	.bevelmenu li a:hover
+	{
+		color: black;
+		background-color: #FFE271;
+		border-style: outset;
+	}
+	
+	.current
+	{
+		display: inherit;
+	}
+	
+	html>body .bevelmenu li a:active 
+	{ /* Apply mousedown effect only to NON IE browsers */
+		border-style: inset;
+	}
+	
+	#mapa
+	{
+		width:860px;
+		height:400px;
+	}
+	
+	#contactform
+	{
+		background:#FFF2BF;
+		padding:15px 15px 0 15px;
+		margin-left:50px;
+		margin-top: 20px;
+	}
+	
+/*	Gallery */
+	
+ 	#slideshow{ 
+		background-color: #000000;
+		width: 550px;
+		margin-left: 120px; 
+		height: 420px; 
+		padding: 20px;
+		text-align: center;
+		-moz-opacity: 0.99;
+   	opacity:0.99;
+	}
+
+	#slideshow .loadingimg{
+		margin-top: 180px;
+		margin-left:20px;
+	}
+
+	.gslideshow a img{
+	 	border: none;
+	}
+
+	.feed-loading {
+		
+	  width: 100%;
+	 	font-size : 20px;
+		text-align : center;
+	 	color : #ffffff;
+		border-top: #666666 dotted 1px;
+		border-bottom: #666666 dotted 1px;
+	}
+	
+	#gallery-titles{
+		color: black;
+		width: 550px;
+		height: 15px;
+		padding: 10px;
+		margin-left: 130px;
+		text-align: center;
+	}
+
+/* Scrollable */
+
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 680px;
+	height:120px;
+
+	/* custom decorations */
+	border:1px solid #ccc;
+	background:url('../images/h300.png') repeat-x;
+}
+
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:680px;
+}
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin:20px 5px 20px 21px;
+	background-color:#fff;
+	padding:2px;
+	border:1px solid #ccc;
+	width:100px;
+	height:75px;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}
+
+
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url('../images/hori_large.png') no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin:40px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover 		{ background-position:-30px -30px; }
+a.right:active 	{ background-position:-60px -30px; } 
+
+
+/* left */
+a.left				{ margin-left: 35px; } 
+a.left:hover  		{ background-position:-30px 0; }
+a.left:active  	{ background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down		{ 
+	background:url('../images/vert_large.png') no-repeat; 
+	float: none;
+	margin: 10px 50px;
+}
+
+/* up */
+a.up:hover  		{ background-position:-30px 0; }
+a.up:active  		{ background-position:-60px 0; }
+
+/* down */
+a.down 				{ background-position: 0 -30px; }
+a.down:hover  		{ background-position:-30px -30px; }
+a.down:active  	{ background-position:-60px -30px; } 
+
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+} 	
+
+
+/* position and dimensions of the navigator */
+.navi {
+	margin-left:400px;
+	width:200px;
+	height:20px;
+}
+
+
+/* items inside navigator */
+.navi a {
+	width:8px;
+	height:8px;
+	float:left;
+	margin:3px;
+	background:url('../images/navigator.png') 0 0 no-repeat;
+	display:block;
+	font-size:1px;
+}
+
+/* mouseover state */
+.navi a:hover {
+	background-position:0 -8px;      
+}
+
+/* active state (current page state) */
+.navi a.active {
+	background-position:0 -16px;     
+}
+
+
